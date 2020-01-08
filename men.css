@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.nav{
+  font-size: 1.5rem;
+}
+
+.navbar {
+  list-style: none;
+  margin-top: 2rem;
+  position: relative;
+  height: 10vh;
+  width: 100vw;
+}
+
+li {
+  display: inline;
+  position: absolute;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+li:first-child {
+   left: 10%;
+}
+
+li:nth-child(2) {
+  left: 45%;
+}
+
+li:nth-child(3) {
+  left: 50%;
+}
+
+li:nth-child(4) {
+  left: 75%;
+}
+
+li:last-child {
+  right: 10%;
+}
+
+.mainHeading{
+  background-image: linear-gradient(to left, #485563, #29323C);
+  font-size: 5rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  margin-top: 3rem;
+  animation: 2s slideInTop 0.6s forwards;
+  transform: translateX(24%);
+}
+
+.main{
+  height: 120vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row{
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  height: 45vh;
+  width: 16vw;
+  border-radius: 2rem;
+  animation: 2s slideInTop 0.6s forwards;
+}
+
+.pic{
+  height: 40vh;
+  width: 16vw;
+}
+
+.img{
+  height: 40vh;
+  width: 16vw;
+  border-radius: 2rem;
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.2rem;
+  color: #485563;
+  margin-top: 1rem;
+}
+
+input{
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 2.2rem;
+  border: none;
+  color: #485563;
+  cursor: pointer;
+}
+
+@keyframes slideInTop {
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes slideInRight {
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
